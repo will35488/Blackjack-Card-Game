@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="BlackjackFX.BlackjackFXMLController">
+   <right>
+      <VBox alignment="CENTER" prefHeight="534.0" prefWidth="146.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label text="Card count:" />
+            <Label fx:id="countLabel" text="Label" />
+            <Label fx:id="bankTitle" text="Bank:" />
+            <Label fx:id="bank" text="Label" />
+            <Label text="Bet amount:" />
+            <Label fx:id="betAmount" text="Label" />
+            <TextArea fx:id="textArea" prefHeight="102.0" prefWidth="208.0" />
+            <Button fx:id="hitButton" mnemonicParsing="false" onAction="#handleHit" text="Hit" />
+            <Button fx:id="stayButton" mnemonicParsing="false" onAction="#handleStay" text="Stay" />
+            <Button fx:id="doubleDownButton" mnemonicParsing="false" onAction="#handleDoubleDown" text="Double Down" />
+            <Label fx:id="message" alignment="CENTER" prefHeight="24.0" prefWidth="213.0" text="Message" />
+            <Label fx:id="playerLabel" alignment="CENTER" prefHeight="18.0" prefWidth="130.0" text="Label" />
+            <Button fx:id="dealButton" mnemonicParsing="false" onAction="#dealButtonPress" text="Deal Cards" />
+            <Button fx:id="ContinueButton" mnemonicParsing="false" onAction="#handleContinueButton" text="Continue" />
+         </children>
+      </VBox>
+   </right>
+   <center>
+      <VBox fx:id="vbox" prefHeight="479.0" prefWidth="601.0" BorderPane.alignment="CENTER">
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets></VBox>
+   </center>
+   <opaqueInsets>
+      <Insets />
+   </opaqueInsets>
+</BorderPane>
